@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+}
+
+nav ul{
+    list-style: none;
+    display: flex; 
+}
+
+nav li{
+    height: 3.75rem; 
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-principal{
+    justify-content: flex-start;
+}
+
+.logotipo{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.navbar{
+    margin-bottom: 0.5rem;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 18%; 
+    z-index: 999;
+    background-color: rgba(248, 247, 248, 0.9);
+    box-shadow: -10px 0 10px rgb(218, 163, 163, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.listar{
+    position: fixed;
+    list-style: none;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    height: 10vh;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "banner banner banner banner"
+    "sobre sobre sobre sobre"
+    "servico servico servico servico"
+    "depoim depoim depoim depoim"
+    "contato contato contato contato";
+}
+
+.banner{
+    grid-area: banner;
+    width: 100%;
+    height: auto;
+}
+
+.sobre{
+    grid-area: sobre;
+    position: relative;
+    text-align: center;
+}
+
+.sobre-titulo{
+    text-align: center;
+    padding: 0.625rem;
+    border-radius: 8px;
+    margin-top: 3.75rem;
+    margin-right: 0.0625rem;
+    margin-bottom: 3.75rem;
+    margin-left: 0.0625rem;
+    background-color: rgb(226, 210, 242);
+    font-size: 1rem;
+}
+
+.sobre-texto{
+    padding: 20px 60px;
+    font-size: 1.2rem;
+}
+
+.servico{
+    grid-area: servico;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.servicos-titulo{
+    flex-basis: 100%;
+    text-align: center;
+    padding: 0.625rem;
+    margin-top: 3.75rem;
+    margin-right: 0.0625rem;
+    margin-bottom: 3.75rem;
+    margin-left: 0.0625rem;
+    background-color: rgb(226, 210, 242);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.servico-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+}
+
+.servico-item{ 
+    padding: 20px;
+    margin: 0.625rem auto;
+    background: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 1rem;
+    flex: 0 1 calc(25% - 30px);
+    
+}
+
+.servico-item h2{
+    margin-bottom: 0.625rem;
+}
+
+.depoim{
+    grid-area: depoim;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.depoimentos-titulo{
+    flex-basis: 100%;
+    text-align: center;
+    padding: 0.625rem;
+    margin-top: 3.75rem;
+    margin-right: 0.0625rem;
+    margin-bottom: 3.75rem;
+    margin-left: 0.0625rem;
+    background-color: rgb(226, 210, 242);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.depoimento-item{
+    width: 20vw;
+    padding: 20px;
+    margin:10px auto;
+    background-color: rgb(200, 154, 243);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 1rem;
+    min-width: 350px;
+}
+
+.depoimento-item h2{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+
+.contato{
+    grid-area: contato;
+    padding: 10px;
+    margin-top: 3.75rem;
+    margin-right: 0.0625rem;
+    margin-left: 0.0625rem;
+    background-color: rgb(226, 210, 242);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+@media(max-width:800px){
+    .hideMobile{
+        display: none;
+    }
+
+    .servico-container{
+        flex-wrap: wrap;
+    }
+
+    .servico-item{
+         flex: 1 1 100%;
+    }
+
+    .sidebar{
+        width: 40%;
+    }
+}
