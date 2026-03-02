@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.navbar{
+    margin-bottom: 0.5rem;
+}
+
 nav{
     display: flex;
 }
@@ -31,10 +35,6 @@ nav a{
 .logotipo{
     font-weight: bold;
     font-size: 1.6rem;
-}
-
-.navbar{
-    margin-bottom: 0.5rem;
 }
 
 .sidebar{
