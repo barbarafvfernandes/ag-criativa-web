@@ -19,18 +19,18 @@
         <nav>
             <ul class="menu-principal">
                 <li class="logotipo"><a href="#">Asian Trip</a></li>
-                <li class="hideMobile"><a href="#">Sobre Nós</a></li>
-                <li class="hideMobile"><a href="#">Serviços</a></li>
-                <li class="hideMobile"><a href="#">Depoimentos</a></li>
-                <li class="hideMobile"><a href="#">Contato</a></li>
+                <li class="hideMobile"><a href="#sobre">Sobre Nós</a></li>
+                <li class="hideMobile"><a href="#servicos">Serviços</a></li>
+                <li class="hideMobile"><a href="#depoimentos">Depoimentos</a></li>
+                <li class="hideMobile"><a href="#contato">Contato</a></li>
             </ul>
 
             <ul class="sidebar">
                 <li id="close"><a href="#"><span class="material-symbols-outlined">close</span></a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
 
             <ul class="listar">
@@ -40,7 +40,7 @@
 
     </header>
 
-    <section class="container">
+    <div class="container">
 
         <main>
 
@@ -49,11 +49,11 @@
 
                 <!-- <article class="banner"> -Para otimização
             <img 
-                src="/images/img-de-marcacao-desktop.png"
-                srcset="/images/banner-phone.png 450w,
-                /images/banner-inter.png 600w,
-                /images/banner-ipad.png 800w,
-                /images/asian-desktop.png 1500w"
+                src="./images/img-de-marcacao-desktop.png"
+                srcset="./images/banner-phone.png 450w,
+                ./images/banner-inter.png 600w,
+                ./images/banner-ipad.png 800w,
+                ./images/asian-desktop.png 1500w"
                 sizes="(max-width: 450px) 100vw,
                 (max-width: 600px) 100vw,
                  (max-width: 800px) 100vw,
@@ -63,10 +63,10 @@
 
                 <article class="banner"> <!-- Força a atualização da imagem-->
                     <picture>
-                        <source media="(max-width: 450px)" srcset="/images/banner-phone.png">
-                        <source media="(max-width: 600px)" srcset="/images/banner-inter.png">
-                        <source media="(max-width: 800px)" srcset="/images/banner-ipad.png">
-                        <img src="/images/asian-desktop.png" alt="Mapa">
+                        <source media="(max-width: 450px)" srcset="./images/banner-phone.png">
+                        <source media="(max-width: 600px)" srcset="./images/banner-inter.png">
+                        <source media="(max-width: 800px)" srcset="./images/banner-ipad.png">
+                        <img src="./images/asian-desktop.png" alt="Mapa">
                     </picture>
                 </article>
 
@@ -74,7 +74,7 @@
 
             <section>
 
-                <article class="sobre">
+                <article class="sobre" id="sobre">
 
                     <h2 class="sobre-titulo">Sobre Nós:</h2>
 
@@ -99,7 +99,7 @@
                     </div>
                 </article>
 
-                <article class="servico">
+                <article class="servico" id="servicos">
 
 
                     <h2 class="servicos-titulo">Nossos Serviços:</h2>
@@ -108,8 +108,8 @@
 
                         <div class="servico-item">
                             <picture>
-                                <source media="(max-width: 800px)" srcset="/images/roteiros.png">
-                                <img src="/images/roteiros.png" alt="Roteiros">
+                                <source media="(max-width: 800px)" srcset="./images/roteiros.png">
+                                <img src="./images/roteiros.png" alt="Roteiros">
                             </picture>
                             <h2>Roteiros</h2>
                             <p>Planos sob medida</p>
@@ -117,8 +117,8 @@
 
                         <div class="servico-item">
                             <picture>
-                                <source media="(max-width: 800px)" srcset="/images/hospedagem.png">
-                                <img src="/images/hospedagem.png" alt="Roteiros">
+                                <source media="(max-width: 800px)" srcset="./images/hospedagem.png">
+                                <img src="./images/hospedagem.png" alt="Roteiros">
                             </picture>
                             <h2>Hospedagem</h2>
                             <p>Os melhores hoteis boutique</p>
@@ -126,8 +126,8 @@
 
                         <div class="servico-item">
                             <picture>
-                                <source media="(max-width: 800px)" srcset="/images/transporte.png">
-                                <img src="/images/transporte.png" alt="Roteiros">
+                                <source media="(max-width: 800px)" srcset="./images/transporte.png">
+                                <img src="./images/transporte.png" alt="Roteiros">
                             </picture>
                             <h2>Transporte</h2>
                             <p>Aluguel de carros e passes de trens</p>
@@ -135,8 +135,8 @@
 
                         <div class="servico-item">
                             <picture>
-                                <source media="(max-width: 800px)" srcset="/images/seguro.png">
-                                <img src="/images/seguro.png" alt="Roteiros">
+                                <source media="(max-width: 800px)" srcset="./images/seguro.png">
+                                <img src="./images/seguro.png" alt="Roteiros">
                             </picture>
                             <h2>Seguro</h2>
                             <p>Viaje tranquilo com cobertura total</p>
@@ -145,14 +145,14 @@
 
                 </article>
 
-                <article class="depoim">
+                <article class="depoim" id="depoimentos">
 
                     <h2 class="depoimentos-titulo">O que nossos clientes dizem:</h2>
 
                     <div class="depoimento-item">
                         <picture>
-                            <source media="(max-width: 800px)" srcset="/images/icone-small.png">
-                            <img src="/images/icone.png" alt="Person">
+                            <source media="(max-width: 800px)" srcset="./images/icone-small.png">
+                            <img src="./images/icone.png" alt="Person">
                         </picture>
                         <h2>Rodrigo</h2>
                         <p>Fiz todo o planejamento da minha viagem com a Euro Trip e foi tudo incrivel. Certamente as
@@ -162,8 +162,8 @@
 
                     <div class="depoimento-item">
                         <picture>
-                            <source media="(max-width: 800px)" srcset="/images/icone-small.png">
-                            <img src="/images/icone.png" alt="Person">
+                            <source media="(max-width: 800px)" srcset="./images/icone-small.png">
+                            <img src="./images/icone.png" alt="Person">
                         </picture>
                         <h2>Luana</h2>
                         <p>A Euro Trip selecionou os melhores hoteis e lugares para conhecer em cada cidade que
@@ -175,8 +175,8 @@
 
                     <div class="depoimento-item">
                         <picture>
-                            <source media="(max-width: 800px)" srcset="/images/icone-small.png">
-                            <img src="/images/icone.png" alt="Person">
+                            <source media="(max-width: 800px)" srcset="./images/icone-small.png">
+                            <img src="./images/icone.png" alt="Person">
                         </picture>
                         <h2>Carlos</h2>
                         <p>Gostei tanto da experiência de viajar com a Euro Trip, que todas as próximas viajens serão
@@ -186,8 +186,8 @@
 
                     <div class="depoimento-item">
                         <picture>
-                            <source media="(max-width: 800px)" srcset="/images/icone-small.png">
-                            <img src="/images/icone.png" alt="Person">
+                            <source media="(max-width: 800px)" srcset="./images/icone-small.png">
+                            <img src="./images/icone.png" alt="Person">
                         </picture>
                         <h2>Jordânia</h2>
                         <p>Toda a logística de trannsporte foi preparada pela Euro trip, e tudo saiu como o esperado!
@@ -201,18 +201,18 @@
 
         </main>
 
-        <footer class="contato">
+        <footer class="contato" id="contato">
 
-            <p>Telefone: +55 11 9 9999 9999 - email: asiantrip@gmail.com - Endereço: Alameda Santos, 900, Bela Vista,
-                São
-                Paulo - SP.</p>
+            <p>&copy;Todos os direitos reservados - Asian Trip.</p>
+            <p>Telefone: +55 11 9 9999 9999 - email: asiantrip@gmail.com.</p>
+            <p>Endereço: Alameda Santos, 900, Bela Vista, São Paulo - SP.</p>
 
         </footer>
 
 
-    </section> <!-- class container -->
+    </div> <!-- class container -->
 
-    <script type="module" src="/js/app.js"></script>
+    <script type="module" src="./js/app.js"></script>
 
 </body>
 

@@ -202,6 +202,10 @@ nav a{
     font-size: 1rem;
 }
 
+.contato p{
+    margin-bottom: 1em;
+}
+
 @media(max-width:800px){
     .hideMobile{
         display: none;
@@ -217,5 +221,11 @@ nav a{
 
     .sidebar{
         width: 40%;
+    }
+}
+
+@media(max-width:450px){
+    .depoimento-item{
+        width: 100%;
     }
 }
