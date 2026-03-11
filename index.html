@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Criativa Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="menu">
+            <ul class="menu__lista menu__lista-principal">
+                <li class="menu__item menu__item--logotipo"><a class="menu__link" href="#">Asian Trip</a></li>
+                <li class="menu__item menu__item--hideMobile"><a class="menu__link" href="#sobre">Sobre</a></li>
+                <li class="menu__item menu__item--hideMobile"><a class="menu__link" href="#servicos">Serviços</a></li>
+                <li class="menu__item menu__item--hideMobile"><a class="menu__link" href="#depoimentos">Depoimentos</a></li>
+                <li class="menu__item menu__item--hideMobile"><a class="menu__link" href="#contato">Contato</a></li>
+            </ul>
+
+            <ul class="menu__lista menu__lista--sidebar">
+                <li class="menu__item" id="close"><a href="#"><span class="material-symbols-outlined">close</span></a></li>
+                <li class="menu__item"><a class="menu__link" href="#sobre">Sobre</a></li>
+                <li class="menu__item"><a class="menu__link" href="#servicos">Serviços</a></li>
+                <li class="menu__item"><a class="menu__link" href="#depoimentos">Depoimentos</a></li>
+                <li class="menu__item"><a class="menu__link" href="#contato">Contato</a></li>
+            </ul>
+
+            <ul class="menu__lista menu__lista--icon">
+                <li class="menu__item" id="lista"><a class="menu__link" href="#"><span class="material-symbols-outlined">menu</span></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="container">
+
+        <main>
+
+
+            <section>
+
+                <!-- <article class="banner"> -Para otimização
+            <img 
+                src="./images/img-de-marcacao-desktop.png"
+                srcset="./images/banner-phone.png 450w,
+                ./images/banner-inter.png 600w,
+                ./images/banner-ipad.png 800w,
+                ./images/asian-desktop.png 1500w"
+                sizes="(max-width: 450px) 100vw,
+                (max-width: 600px) 100vw,
+                 (max-width: 800px) 100vw,
+                (max-width: 1500px) 100vw,"
+                alt="Mapa"
+            </article> -->
+
+                <article class="banner"> <!-- Força a atualização da imagem-->
+                    <picture>
+                        <source media="(max-width: 450px)" srcset="./images/banner-phone.png">
+                        <source media="(max-width: 600px)" srcset="./images/banner-inter.png">
+                        <source media="(max-width: 800px)" srcset="./images/banner-ipad.png">
+                        <img src="./images/asian-desktop.png" alt="Mapa">
+                    </picture>
+                </article>
+
+            </section>
+
+            <section>
+
+                <article class="sobre" id="sobre">
+
+                    <h2 class="sobre__titulo">Sobre Nós:</h2>
+
+                    <div class="sobre__texto">
+                        <p>Criada a partir da vontade de incentivar e democratizar as viagens ao redor do mundo, focamos
+                            nossas
+                            atividades na Asia inicialmente, e posteriormente criamos outras agências com focos na
+                            América,
+                            África, Europa, Oceania e Antartida.
+                            Na Asian Trip, acreditamos que a Asia não é apenas um destino, mas um mosaico de
+                            experiências
+                            que
+                            esperam por você. Confira nossos pacotes exclusivos e descubra como transformamos o
+                            planejamento
+                            complexo em uma jornada descomplicada.
+                            Deixe a curadoria conosco: Selecionamos os melhores roteiros, desde culinárias
+                            diversificadas e
+                            regionais até as mais incríveis imersões tecnológicas típicas do continente asiático. Com
+                            suporte
+                            especializado e itinerários personalizados, garantimos que cada detalhe da sua viagem seja
+                            memorável.</p>
+                    </div>
+                </article>
+
+                <article class="servico" id="servicos">
+
+
+                    <h2 class="servico__titulo">Nossos Serviços:</h2>
+
+                    <section class="servico__container">
+
+                        <div class="servico__item">
+                            <picture>
+                                <source media="(max-width: 800px)" srcset="./images/roteiros.png">
+                                <img src="./images/roteiros.png" alt="Roteiros">
+                            </picture>
+                            <h2 class="servico__item-titulo">Roteiros</h2>
+                            <p>Planos sob medida</p>
+                        </div> 
+
+                        <div class="servico__item">
+                            <picture>
+                                <source media="(max-width: 800px)" srcset="./images/hospedagem.png">
+                                <img src="./images/hospedagem.png" alt="Roteiros">
+                            </picture>
+                            <h2 class="servico__item-titulo">Hospedagem</h2>
+                            <p>Os melhores hoteis boutique</p>
+                        </div>
+
+                        <div class="servico__item">
+                            <picture>
+                                <source media="(max-width: 800px)" srcset="./images/transporte.png">
+                                <img src="./images/transporte.png" alt="Roteiros">
+                            </picture>
+                            <h2 class="servico__item-titulo">Transporte</h2>
+                            <p>Aluguel de carros e passes de trens</p>
+                        </div>
+
+                        <div class="servico__item">
+                            <picture>
+                                <source media="(max-width: 800px)" srcset="./images/seguro.png">
+                                <img src="./images/seguro.png" alt="Roteiros">
+                            </picture>
+                            <h2 class="servico__item-titulo">Seguro</h2>
+                            <p>Viaje tranquilo com cobertura total</p>
+                        </div>
+                    </section>
+
+                </article>
+
+                <article class="depoim" id="depoimentos">
+
+                    <h2 class="depoim__titulo">O que nossos clientes dizem:</h2>
+
+                    <div class="depoim__item">
+                        <picture>
+                            <source media="(max-width: 800px)" srcset="./images/icone-small.png">
+                            <img src="./images/icone.png" alt="Person">
+                        </picture>
+                        <h2 class="depoim__item-titulo">Rodrigo</h2>
+                        <p>Fiz todo o planejamento da minha viagem com a Euro Trip e foi tudo incrivel. Certamente as
+                            próximas
+                            viajens serão realizadas com eles. Plano personalizado. Superou minhas expectativas.</p>
+                    </div>
+
+                    <div class="depoim__item">
+                        <picture>
+                            <source media="(max-width: 800px)" srcset="./images/icone-small.png">
+                            <img src="./images/icone.png" alt="Person">
+                        </picture>
+                        <h2 class="depoim__item-titulo">Luana</h2>
+                        <p>A Euro Trip selecionou os melhores hoteis e lugares para conhecer em cada cidade que
+                            passamos.
+                            Certamente as próximas viajens serão realizadas com eles. Plano personalizado. Superou
+                            minhas
+                            expectativas.</p>
+                    </div>
+
+                    <div class="depoim__item">
+                        <picture>
+                            <source media="(max-width: 800px)" srcset="./images/icone-small.png">
+                            <img src="./images/icone.png" alt="Person">
+                        </picture>
+                        <h2 class="depoim__item-titulo">Carlos</h2>
+                        <p>Gostei tanto da experiência de viajar com a Euro Trip, que todas as próximas viajens serão
+                            com eles. Certamente as próximas viajens serão realizadas com eles. Plano personalizado.
+                            Superou minhas expectativas.</p>
+                    </div>
+
+                    <div class="depoim__item">
+                        <picture>
+                            <source media="(max-width: 800px)" srcset="./images/icone-small.png">
+                            <img src="./images/icone.png" alt="Person">
+                        </picture>
+                        <h2 class="depoim__item-titulo">Jordânia</h2>
+                        <p>Toda a logística de trannsporte foi preparado pela Euro trip, e tudo saiu como o esperado!
+                            Certamente as próximas viajens serão realizadas com eles. Plano personalizado. Superou
+                            minhas expectativas.</p>
+                    </div>
+
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer class="contato" id="contato">
+
+            <p class="contato__infos">&copy;Todos os direitos reservados - Asian Trip.</p>
+            <p class="contato__infos">Telefone: +55 11 9 9999 9999 - email: asiantrip@gmail.com.</p>
+            <p class="contato__infos">Endereço: Alameda Santos, 900, Bela Vista, São Paulo - SP.</p>
+
+        </footer>
+
+
+    </div> <!-- class container -->
+
+    <script type="module" src="./js/app.js"></script>
+
+</body>
+
+</html>
